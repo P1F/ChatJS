@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChatJS</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="acesso_usuario">
+            <form id='login'>
+                <input type='text' id='apelido' placeholder="Insira seu apelido" name="apelido" />
+                <input type='submit' value="Entrar" />
+            </form>
+        </div>
+        <div id="sala_chat">
+            <div id="historico_mensagens">
+                <select multiple="multiple" id="lista_usuarios">
+                    <option value=''>Participantes</option>
+                </select>
+            </div>
+            <form id='chat'>
+                <input type='text' id='texto_mensagem' name='texto_mensagem' />
+                <input type='submit' value='Enviar mensagem!' />
+            </form>
+        </div>
+    </body>
+</html>
