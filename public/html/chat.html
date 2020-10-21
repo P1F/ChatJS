@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ChatJS</title>
+        <link rel="stylesheet" type="text/css" href="/css/chat.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="/js/chat.js"></script>
+    </head>
+    <body>
+        <div id="chat-container">
+            <div id="search-container">
+                <input type="text" placeholder="Search" />
+            </div>
+            <div id="participants-list">
+                <div class="participant">
+                    <img src="./images/rodrigo.jpg" alt="rodrigo" />
+                    <div class="name">
+                        Rodrigo Teixeira
+                    </div>
+                    <div class="created-date">
+                        Oct 20
+                    </div>
+                    <div class="conversation-message">
+                        This is a message!
+                    </div>
+                </div>
+            </div>
+            <div id="new-message-container">
+                
+            </div>
+            <div id="chat-title">
+                <span>Rodrigo Teixeira</span>
+            </div>
+            <div id="chat-message-list">
+                <div class="message-row you-message">
+                    <div class="message-content">
+                        <div class="message-text">O loco mew! Esse é fera ein bisho! ESse é doido mew se é llooooooco tio. Essa messagem tah ficando mto grande.</div>
+                        <!-- <div class="message-time">Oct 20</div> -->
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="./images/rodrigo.jpg" alt="rodrigo" /> 
+                        <div class="message-text">O loco mew! Esse é fera ein bisho!</div>
+                        <!-- <div class="message-time">Oct 20</div> -->
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="./images/rodrigo.jpg" alt="rodrigo" /> 
+                        <div class="message-text">O loco mew! Esse é fera ein bisho!</div>
+                        <!-- <div class="message-time">Oct 20</div> -->
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="./images/rodrigo.jpg" alt="rodrigo" /> 
+                        <div class="message-text">O loco mew! Esse é fera ein bisho!</div>
+                        <!-- <div class="message-time">Oct 20</div> -->
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="./images/rodrigo.jpg" alt="rodrigo" /> 
+                        <div class="message-text">teste</div>
+                        <div class="message-time">Oct 20</div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="./images/rodrigo.jpg" alt="rodrigo" /> 
+                        <div class="message-text">teste</div>
+                        <div class="message-time">Oct 20</div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="./images/rodrigo.jpg" alt="rodrigo" /> 
+                        <div class="message-text">teste2</div>
+                        <div class="message-time">Oct 20</div>
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <div class="message-content">
+                        <img src="./images/rodrigo.jpg" alt="rodrigo" /> 
+                        <div class="message-text">teste3</div>
+                        <div class="message-time">Oct 20</div>
+                    </div>
+                </div>
+            </div>
+            <form id="chat-form">
+                <input type="text" placeholder="type a message" id="message-input" autocomplete="off"/>
+                <input type="submit" />
+            </form>
+        </div>
+    </body>
+</html>
