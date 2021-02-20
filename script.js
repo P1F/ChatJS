@@ -27,6 +27,7 @@ $(document).ready(function(){
     socket.on("atualizar mensagens", function(dados){
         var mensagem = dados.msg;
         var tipo = dados.tipo;
+        let teste = [];
 
         var mensagem_formatada = $(`<p>${mensagem}</p>`).addClass(tipo);
         $('#historico_mensagens').append(mensagem_formatada);
